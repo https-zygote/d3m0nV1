@@ -3,18 +3,18 @@ import sys
 import socket
 from termcolor import cprint
  
-print("any misuse of the THE DEVILS DEMONS is not responsible for these little idiots")
-print('i do not care what YOU do with this tool but YOU are reposible for YOU so if you wanna continue and sign your life away just say yes\n')
+cprint("any misuse of the THE DEVILS DEMONS is not responsible for these little idiots", "red")
+cprint('i do not care what YOU do with this tool but YOU are reposible for YOU so if you wanna continue and sign your life away just say yes\n', "red")
  
 agreement = input('Agree to continue: ')
  
 if agreement.lower() == "yes":
     pass
 elif agreement.lower() == "no":
-    print("\nExiting script.")
+    cprint("\nExiting script.", "red")
     sys.exit()
 else:
-    print("\nNot an option. Exiting script.")
+    cprint("\nNot an option. Exiting script.", "cyan")
     sys.exit()
  
  
@@ -36,9 +36,9 @@ class tools:
         import socket
         self.hostname = socket.gethostname()    
         self.IPAddr = socket.gethostbyname(self.hostname)
-        print("\nfind your ip address with ip finder made by http.zygote")
-        print("\nYour Computer Name is: " + self.hostname)    
-        print("Your Computer IP Address is: " + self.IPAddr)
+        cprint("\nfind your ip address with ip finder made by http.zygote" , "red")
+        cprint("\nYour Computer Name is: " + self.hostname)    
+        cprint("Your Computer IP Address is: " + self.IPAddr , "red")
  
     def dox_template(self):
         cprint("welcome to zygotes dox helper here is your doxing template" , "red")
